@@ -6,7 +6,10 @@ const intialState = {
 
 
 }
-const recipeSlice = createSlice({
+export const recipeSlice = createSlice({
 name:"recipe",
 intialState,
+reducers:{
+
+}
 })
