@@ -18,7 +18,7 @@ const App = () => {
       <h2>Recipes</h2>
       <ul>
         {recipes.map(recipe => (
-          <li key={recipe.idCategory}>{recipe.strCategory}</li>
+          <li key={recipe._id}>{recipe.title}</li>
         ))}
       </ul>
     </div>

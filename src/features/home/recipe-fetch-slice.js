@@ -6,10 +6,8 @@ export const fetchedRecipes = createAsyncThunk(
   "recipes/fetchedRecipes",
   async () => {
     try {
-      const fetch = await axios.get(
-        "https://www.themealdb.com/api/json/v1/1/categories.php"
-      );
-      return fetch.data.categories
+      const response = await axios.get('http://localhost:3001/api/data'); 
+      return response.data
     } catch (error) {
       console.log(error);
     }
